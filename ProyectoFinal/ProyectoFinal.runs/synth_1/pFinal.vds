@@ -1,0 +1,329 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu May 29 10:42:07 2025
+# Process ID: 22080
+# Current directory: C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.runs/synth_1
+# Command line: vivado.exe -log pFinal.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pFinal.tcl
+# Log file: C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.runs/synth_1/pFinal.vds
+# Journal file: C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.runs/synth_1\vivado.jou
+# Running On: DESKTOP-URO4J84, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 7887 MB
+#-----------------------------------------------------------
+source pFinal.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 425.711 ; gain = 162.320
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.srcs/utils_1/imports/synth_1/pFinal.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.srcs/utils_1/imports/synth_1/pFinal.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top pFinal -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10588
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1245.285 ; gain = 411.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pFinal' [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.srcs/sources_1/new/pFinal.vhd:23]
+	Parameter STAGES bound to: 2 - type: integer 
+	Parameter XPOL bound to: 1'b0 
+INFO: [Synth 8-3491] module 'synchronizer' declared at 'C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/synchronizer.vhd:21' bound to instance 'rstSynchronizer' of component 'synchronizer' [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.srcs/sources_1/new/pFinal.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'synchronizer' [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/synchronizer.vhd:35]
+	Parameter STAGES bound to: 2 - type: integer 
+	Parameter XPOL bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'synchronizer' (0#1) [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/synchronizer.vhd:35]
+INFO: [Synth 8-3491] module 'ps2receiver' declared at 'C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/ps2receiver.vhd:21' bound to instance 'ps2KeyboardInterface' of component 'ps2receiver' [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.srcs/sources_1/new/pFinal.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'ps2receiver' [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/ps2receiver.vhd:38]
+	Parameter STAGES bound to: 2 - type: integer 
+	Parameter XPOL bound to: 1'b0 
+INFO: [Synth 8-3491] module 'synchronizer' declared at 'C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/synchronizer.vhd:21' bound to instance 'ps2ClkSynchronizer' of component 'synchronizer' [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/ps2receiver.vhd:47]
+	Parameter STAGES bound to: 2 - type: integer 
+	Parameter XPOL bound to: 1'b0 
+INFO: [Synth 8-3491] module 'synchronizer' declared at 'C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/synchronizer.vhd:21' bound to instance 'ps2DataSynchronizer' of component 'synchronizer' [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/ps2receiver.vhd:53]
+	Parameter XPOL bound to: 1'b0 
+INFO: [Synth 8-3491] module 'edgeDetector' declared at 'C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/edgedetector.vhd:21' bound to instance 'ps2ClkEdgeDetector' of component 'edgeDetector' [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/ps2receiver.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'edgeDetector' [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/edgedetector.vhd:35]
+	Parameter XPOL bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'edgeDetector' (0#1) [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/edgedetector.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ps2receiver' (0#1) [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/ps2receiver.vhd:38]
+	Parameter FREQ_DIV bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'vgaRefresher' declared at 'C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/vgaRefresher.vhd:4' bound to instance 'screenInteface' of component 'vgaRefresher' [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.srcs/sources_1/new/pFinal.vhd:258]
+INFO: [Synth 8-638] synthesizing module 'vgaRefresher' [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/vgaRefresher.vhd:29]
+	Parameter FREQ_DIV bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vgaRefresher' (0#1) [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/sources/common/vgaRefresher.vhd:29]
+WARNING: [Synth 8-614] signal 'yLeft' is read in the process but is not in the sensitivity list [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.srcs/sources_1/new/pFinal.vhd:281]
+INFO: [Synth 8-256] done synthesizing module 'pFinal' (0#1) [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.srcs/sources_1/new/pFinal.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element debug_hit_reg was removed.  [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.srcs/sources_1/new/pFinal.vhd:484]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1412.637 ; gain = 578.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1412.637 ; gain = 578.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1412.637 ; gain = 578.473
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1412.637 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.srcs/constrs_1/new/pFinalcons.xdc]
+Finished Parsing XDC File [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.srcs/constrs_1/new/pFinalcons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.srcs/constrs_1/new/pFinalcons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pFinal_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pFinal_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1467.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1467.684 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1467.684 ; gain = 633.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1467.684 ; gain = 633.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1467.684 ; gain = 633.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'oleada_reg' in module 'pFinal'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               01
+                 iSTATE0 |                               01 |                               10
+                 iSTATE2 |                               10 |                               11
+                 iSTATE1 |                               11 |                               00
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'oleada_reg' using encoding 'sequential' in module 'pFinal'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1467.684 ; gain = 633.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   21 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   3 Input    9 Bit       Adders := 64    
+	   2 Input    8 Bit       Adders := 157   
+	   3 Input    8 Bit       Adders := 44    
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 5     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 144   
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 27    
++---Muxes : 
+	   2 Input   21 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 79    
+	   3 Input    8 Bit        Muxes := 28    
+	   4 Input    8 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 9     
+	   3 Input    7 Bit        Muxes := 20    
+	   2 Input    6 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 2     
+	   9 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	  10 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 10    
+	   3 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 286   
+	   8 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1467.684 ; gain = 633.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+--------------+---------------+----------------+
+|Module Name | RTL Object   | Depth x Width | Implemented As | 
++------------+--------------+---------------+----------------+
+|pFinal      | sprite_data0 | 128x16        | LUT            | 
+|pFinal      | sprite_data0 | 128x16        | LUT            | 
++------------+--------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1467.684 ; gain = 633.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1503.008 ; gain = 668.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1503.047 ; gain = 668.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1503.047 ; gain = 668.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1503.047 ; gain = 668.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1503.047 ; gain = 668.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1503.047 ; gain = 668.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1503.047 ; gain = 668.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1503.047 ; gain = 668.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   502|
+|3     |LUT1   |   446|
+|4     |LUT2   |   891|
+|5     |LUT3   |   407|
+|6     |LUT4   |  1413|
+|7     |LUT5   |   441|
+|8     |LUT6   |   538|
+|9     |MUXF7  |     2|
+|10    |FDRE   |   605|
+|11    |FDSE   |   214|
+|12    |IBUF   |     4|
+|13    |OBUF   |    14|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1503.047 ; gain = 668.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 1503.047 ; gain = 613.836
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1503.047 ; gain = 668.883
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1505.875 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 504 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1509.551 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: be2ee0a9
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1509.551 ; gain = 1055.918
+INFO: [Common 17-1381] The checkpoint 'C:/Users/GERMAN/Desktop/universidad/4_cuarto/Diseo Automatico de Sistemas/DAS/labs/projects/ProyectoFinal/ProyectoFinal.runs/synth_1/pFinal.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pFinal_utilization_synth.rpt -pb pFinal_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 29 10:43:20 2025...
